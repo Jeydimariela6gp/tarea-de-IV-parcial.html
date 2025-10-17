@@ -1,0 +1,43 @@
+*{
+    margin:0;
+    padding:0;
+    block-size :border-box;
+}
+
+
+
+
+.padre{
+    display:grid;
+    gap: 10px;
+    background-color:lightgray;
+    padding: 20px;
+    border: 2px solid black;
+    ;
+
+
+}
+.hijo1 {
+    background-color: green;
+    padding: 20px;
+    border: 2px solid black;
+}  
+.hijo2 {
+    background-color:violet;
+    padding: 20px;
+    border: 2px solid black;
+    ;
+}
+.hijo3{
+    background-color:darkorange;
+    padding: 20px;
+    border: 2px solid black;
+    ;
+}
+.hijo4 {
+    background-color:lightblue;
+    padding: 20px;
+    border: 2px solid black;
+    ;
+}
+

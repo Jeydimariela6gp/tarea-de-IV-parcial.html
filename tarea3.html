@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Eventos en JavaScript</title>
+    <link rel="stylesheet" href="tarea3.css">
+</head>
+<body>
+
+    <h1>Tabla Comparativa de Eventos en JavaScript</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Evento</th>
+                <th>Descripción</th>
+                <th>Ejemplo de Código</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><code>click</code></td>
+                <td>Se activa cuando el usuario hace clic en un elemento.</td>
+                <td>
+<pre>
+&lt;button onclick="alert('¡Haz hecho clic!')"&gt;
+    Clic aquí
+&lt;/button&gt;
+</pre>
+                </td>
+            </tr>
+            <tr>
+                <td><code>mouseover</code></td>
+                <td>Ocurre cuando el puntero del ratón entra en un elemento.</td>
+                <td>
+<pre>
+&lt;div onmouseover="this.style.backgroundColor='yellow'"&gt;
+    Pasa el mouse por aquí
+&lt;/div&gt;
+</pre>
+                </td>
+            </tr>
+            <tr>
+                <td><code>keydown</code></td>
+                <td>Se activa cuando el usuario presiona una tecla del teclado.</td>
+                <td>
+<pre>
+&lt;input type="text" onkeydown="console.log('Tecla presionada')" /&gt;
+</pre>
+                </td>
+            </tr>
+            <tr>
+                <td><code>load</code></td>
+                <td>Se dispara cuando la página web ha terminado de cargarse.</td>
+                <td>
+<pre>
+&lt;script&gt;
+    window.onload = function() {
+        alert("Página cargada completamente");
+    };
+&lt;/script&gt;
+</pre>
+                </td>
+            </tr>
+            <tr>
+                <td><code>submit</code></td>
+                <td>Se produce cuando un formulario es enviado.</td>
+                <td>
+<pre>
+&lt;form onsubmit="alert('Formulario enviado'); return false;"&gt;
+    &lt;input type="text" required /&gt;
+    &lt;button type="submit"&gt;Enviar&lt;/button&gt;
+&lt;/form&gt;
+</pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
+
